@@ -19,4 +19,14 @@ public class SecurityController {
         return new ResponseEntity<String>("Welcome", HttpStatus.OK);
     }
 
+    @GetMapping("/user")
+    public ResponseEntity<String> user() {
+        return new ResponseEntity<String>("Welcome to user page", HttpStatus.OK);
+    }
+
+    @GetMapping("/admin")
+    public ResponseEntity<String> admin() {
+        return new ResponseEntity<String>("Welcome to admin page", HttpStatus.OK);
+    }
+
 }
